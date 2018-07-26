@@ -1,0 +1,189 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+*{
+  font-family:"微软雅黑";
+  box-sizing:border-box;
+}
+body,html{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+.pull-left{
+  float:left;
+}
+.pull-right{
+  float:right;
+}
+.clearfix:after{
+  display:block;
+  content:".";
+  height:0;
+  visibility:hidden;
+  clear:both;
+}
+.clearfix{
+  *zoom:1;
+}
+.btn{
+  border:none;
+  background-color:red;
+  color:#fff;
+  cursor:pointer;
+}
+a{
+  color: #3cf;
+  cursor: pointer;
+}
+body{
+  /*http://www.17sucai.com/preview/124020/2015-11-06/login/img/logo_bg.jpg*/
+  background:url(http://www.17sucai.com/preview/124020/2015-11-06/login/img/logo_bg.jpg)
+  no-repeat center center;
+}
+.theme-name{
+  margin-top:80px;
+  color:#fff;
+  font-size:36px;
+}
+:target{
+  color:red;
+}
+.menu{
+  width:500px;
+  background:#fff;
+  margin:150px auto;
+}
+.menu-list>li{
+  float:left;
+}
+.menu-list>li>a:hover{
+  color:#abef98;
+}
+.login-wrapper{
+  position: absolute;
+  top:200px;
+  left:50%;
+  width:350px;
+  height:400px;
+  padding:10px 30px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  background-color:#fff;
+}
+.title{
+  position:relative;
+  width:100%;
+  height:50px;
+  line-height:50px;
+  font-size:18px;
+  color:#888888;
+  border-bottom:1px solid #ccc;
+}
+.slide-block{
+  position:absolute;
+  left:15%;
+  bottom:0;
+  content:"";
+  width:90px;
+  height:2px;
+  background-color:rgba(1,1,1,0.5);
+  -webkit-transition:left .3s ease-in;
+  transition:left .3s ease-in;
+
+}
+.slide-block.active{
+  left:55%;
+
+}
+.title a{
+  display:inline-block;
+  overflow:hidden;
+  margin-bottom:2px;
+  padding:0 20px;
+  color:#ccc;
+  text-decoration:none;
+}
+.title a:nth-child(1)
+{
+  margin-left:50px;
+}
+.title a:nth-child(2){
+  margin-right:50px;
+}
+.title a:hover,
+.title a.select{
+  color:#333;
+}
+.form-item{
+  width:100%;
+  margin-bottom:10px;
+  color:rgb(102, 102, 102)
+
+}
+.input-item{
+  margin-bottom:20px;
+}
+input[type="text"],
+input[type="password"],
+button{
+  width:100%;
+  height:40px;
+  line-height:40px;
+}
+input[type="text"],
+input[type="password"]{
+  padding-left:10px;
+}
+form{
+  background-color:#fff;
+  margin-top:20px
+}
+#register{
+  display:none;
+}
+.msg-box{
+  font-size:14px;
+}
+.tip-panel{
+  box-sizing:border-box;
+  width:500px;
+  margin:250px auto;
+  padding:50px 50px;
+  background-color:#fff;
+  border-radius:10px;
+  box-shadow:3px 3px 3px rgba(1,1,1,0.5);
+}
+/*动画效果*/
+.animate{
+  -webkit-animation-duration:.8s;
+  animation-duration:.8s;
+  -webkit-animation-timing-function:ease-in;
+  animation-timing-function:ease-in;
+}
+.moveLeft{
+  -webkit-animation-name:moveLeft;
+  animation-name:moveLeft;
+}
+.moveRight{
+  -webkit-animation-name:moveRight;
+  animation-name:moveRight;
+}
+@-webkit-keyframes moveLeft{
+  0%{
+    -webkit-transform:translateX(-100%);
+  }
+  100%{
+    -webkit-transform:translateX(0);
+  }
+}
+
+@-webkit-keyframes moveRight{
+  0%{
+    -webkit-transform:translateX(100%);
+  }
+  100%{
+    -webkit-transform:translateX(0);
+  }
+}

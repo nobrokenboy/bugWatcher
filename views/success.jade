@@ -1,0 +1,11 @@
+//
+   Created by jessic on 2016/10/20.
+
+extends layout
+block content
+   div.tip-panel
+      h1 #{JSON.stringify(result.msg)}
+      if result.type=="register"
+         a(href='/loginRegister') 点击进行登录
+      else if result.type=="login"
+         a(href='/') 点击回到首页

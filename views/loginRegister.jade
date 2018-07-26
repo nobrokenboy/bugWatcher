@@ -1,0 +1,42 @@
+//Created by jessic on 2016/10/20.
+extends layout
+block content
+   section.login-register
+      hgroup
+         h1.theme-name(align='center') 生活记录从这里开始
+      div
+         section
+            div.login-wrapper
+               div.title.active
+                  a.pull-left.link-login.select(href="#login") 登录
+                  a.pull-right.link-register(href="#register") 注册
+                  div.slide-block
+               div
+                  form#login
+                     div.form-item.input-item
+                        input#mobileNum(type="text",placeholder="手机号" name="phonenum2")
+                     div.form-item.input-item
+                        input#password(type="password",placeholder="密码" name="password2")
+                     div.form-item.msg-box.clearfix
+                        div.pull-left
+                           input(type="checkbox")
+                           label 下次自动登录
+                        div.pull-right
+                           a.btn-forget 忘记密码
+                     div.form-item
+                        button.btn.btn-login(type='button') 登录
+                     div.form-item
+                        span 还没有账号?
+                        a.btn-go-register(href="#register") 马上注册
+                  form#register
+                     div.form-item.input-item
+                        input#userName(type="text",placeholder="用户名" name="username")
+                     div.form-item.input-item
+                        input#phoneNum(type="text",placeholder="手机号" name="phonenum")
+                     div.form-item.input-item
+                        input#pw(type="password",placeholder="密码" name="password")
+                     div.form-item.input-item
+                        input#comfirmPw(type="password",placeholder="确认密码" name="password-repeat")
+                     div.form-item
+                        button.btn.btn-register(type='button') 注册
+   script(src='/javascripts/loginRegister.js')
